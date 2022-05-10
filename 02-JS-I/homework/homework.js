@@ -7,9 +7,11 @@ const nuevaString = 'Zapatero';
 const nuevoNum = 7;
 
 // Crea una variable booleana:
-const nuevoBool = 5;
-const nuevaResta = 10 - 5 === 5;
+const nuevoBool = true;
 
+// Resuelve el siguiente problema matemático:
+const nuevaResta = 10 - 5 === 5;
+  
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
@@ -40,7 +42,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var resta = x - y; 
+  var resta = x - y;
   return resta;
 }
 
@@ -95,27 +97,41 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num > 50){
+  return true 
+
+  }
+  return false 
+
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  var resto = x % y;
+  return resto;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
-}
+  if(num % 2 === 0){
+    return true;
+  }
 
+  return false;
+}
+ 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num % 2 === 1){
+    return true;
+  }
+
+  return false;
 }
 
 function elevarAlCuadrado(num) {
