@@ -93,6 +93,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+ // [10, 10, 16, 12] 
+
 }
 
 
@@ -100,11 +102,15 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  for(var i = 0 ; i < numeros.length ; i ++){
-
-
-} }
-
+  var enteros = 0
+  for (var i = 0; i < numeros.length ; i++){
+    if(numeros[i] > enteros){
+      enteros = numeros[i];
+    }
+  }
+    return enteros;
+  }
+ 
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
@@ -116,6 +122,15 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  // [10,25,36,2,17,39]
+  var elemento = 0
+  for(var i = 0; i < arreglo.length; i++){
+  if (arreglo[i] > 18){
+    elemento++
+  
+  }
+}
+  return elemento;
 
 }
 
@@ -125,8 +140,13 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+   if(numeroDeDia === 1 || numeroDeDia === 7){
+   return "Es fin de semana" 
+   } if(numeroDeDia === 2 || numeroDeDia < 7){
+    return "Es dia Laboral" 
+  }
 } 
+
 
 
 function empiezaConNueve(n) {
