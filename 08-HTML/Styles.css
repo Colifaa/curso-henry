@@ -1,0 +1,19 @@
+
+    h1{ color:orange
+
+    }
+    img{
+        height: 400px;
+    }
+    #thirdDiv{ 
+        height:900px;
+        width: 900px;
+        background-color:black;
+        padding: 50px;
+        border: 10px solid orangered
+    }
+    #spanId{
+        font-size: 18px;
+        margin: 80px;
+    } 
+        
